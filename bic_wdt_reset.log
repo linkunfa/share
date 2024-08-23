@@ -1,0 +1,773 @@
+墼)I旛00:00:00.002,000] <inf> usb_dc_asp*** Booting Zephyr OS build v00.01.06-77-g5228f41fce89  ***
+Hello, welcome to Yosemite V4 Sentinel Dome 2024.33.a1
+eeRST: WDT1 SOC
+d: select ep[0x81] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x82] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x1] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x2] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x3] as OUT endpoint
+[00:00:00.009,000] <inf> kcs_aspeed: KCS3: addr=0xca2, idr=0x2c, odr=0x38, str=0x44
+
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 1000000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi2_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi1_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.037,000] <inf> hal_gpio: TOTAL_GPIO_NUM: 168
+[00:00:00.037,000] <inf> hal_gpio: gpio_dev_str[0]: GPIO0_A_D
+[00:00:00.037,000] <inf> hal_gpio: gpio_dev_str[1]: GPIO0_E_H
+[00:00:00.037,000] <inf> hal_gpio: gpio_dev_str[2]: GPIO0_I_L
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[3]: GPIO0_M_P
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[4]: GPIO0_Q_T
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[5]: GPIO0_U_V
+[00:00:00.038,000] <err> pinmux_aspeed: pin 72 already occupied by 61
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 73 already occupied by 62
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 74 already occupied by 64
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 78 already occupied by 67
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 79 already occupied by 68
+
+[00:00:00.041,000] <inf> plat_class: Slot EID = 40, Slot ID = 4
+[00:00:00.042,000] <inf> plat_class: Retimer type: 0x0
+[00:00:00.042,000] <inf> plat_i3c: Start a thread to send setaasa
+[00:00:00.124,000] <err> sensor: Init sensor size is zero
+[00:00:00.124,000] <inf> pldm_sensor: Init PDR table
+[00:00:00.125,000] <inf> pldm_sensor: Init PLDM sensor monitor thread
+[00:00:00.125,000] <wrn> power_status: DC_STATUS: on
+[00:00:00.125,000] <wrn> power_status: POST_COMPLETE: yes
+[00:00:00.125,000] <err> plat_pldm_sensor: Unable to change the ssd device due to its unknown blade config.
+[00:00:00.128,000] <inf> usb_cdc_acm: Device suspended
+[00:00:00.132,000] <inf> apml: SBRMI_CONTROL read
+[00:00:00.133,000] <inf> apml: SBRMI_CONTROL written
+[00:00:00.134,000] <inf> apml: SBRMI_CONTROL read
+[00:00:00.135,000] <inf> apml: SBRMI_CONTROL written
+[00:00:00.135,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0x9
+[00:00:00.136,000] <inf> mctp: mctp_rx_task start 0x56398
+[00:00:00.136,000] <inf> mctp: mctp_tx_task start 0x56398
+[00:00:00.137,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0xa
+[00:00:00.137,000] <inf> mctp: mctp_rx_task start 0x58040
+[00:00:00.137,000] <inf> mctp: mctp_tx_task start 0x58040
+[00:00:00.138,000] <inf> plat_dimm: Start thread to get dimm information
+[00:00:00.138,000] <inf> mctp: mctp_rx_task start 0x59ce8
+[00:00:00.138,000] <inf> mctp: mctp_tx_task start 0x59ce8
+[00:00:00.139,000] <inf> mctp: mctp_rx_task start 0x5b7c8
+[00:00:00.139,000] <inf> mctp: mctp_tx_task start 0x5b7c8
+[00:00:00.192,000] <inf> plat_isr: APML_ALERT detected
+[00:00:00.193,000] <err> i3c: SIR is not allowed by software
+[00:00:00.193,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.193,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.193,000] <wrn> mctp: mctp write data failed
+[00:00:00.193,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.193,000] <wrn> pldm: Send msg failed!
+[00:00:00.193,000] <err> i3c: SIR is not allowed by software
+[00:00:00.193,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.193,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.193,000] <wrn> mctp: mctp write data failed
+[00:00:00.193,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.193,000] <wrn> pldm: Send msg failed!
+[00:00:00.193,000] <err> i3c: SIR is not allowed by software
+[00:00:00.193,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.193,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.193,000] <wrn> mctp: mctp write data failed
+[00:00:00.193,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.193,000] <wrn> pldm: Send msg failed!
+[00:00:00.194,000] <wrn> pldm: Retry reach max!
+[00:00:00.194,000] <err> plat_isr: mctp_pldm_read fail
+[00:00:00.264,000] <inf> plat_isr: APML_ALERT detected
+[00:00:00.266,000] <err> i3c: SIR is not allowed by software
+[00:00:00.266,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.266,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.266,000] <wrn> mctp: mctp write data failed
+[00:00:00.266,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.266,000] <wrn> pldm: Send msg failed!
+[00:00:00.266,000] <err> i3c: SIR is not allowed by software
+[00:00:00.266,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.266,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.266,000] <wrn> mctp: mctp write data failed
+[00:00:00.266,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.266,000] <wrn> pldm: Send msg failed!
+[00:00:00.266,000] <err> i3c: SIR is not allowed by software
+[00:00:00.266,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.266,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.266,000] <wrn> mctp: mctp write data failed
+[00:00:00.266,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.266,000] <wrn> pldm: Send msg failed!
+[00:00:00.266,000] <wrn> pldm: Retry reach max!
+[00:00:00.266,000] <err> plat_isr: mctp_pldm_read fail
+
+
+uart:~$ [00:00:02.136,000] <err> i3c: SIR is not allowed by software
+[00:00:02.136,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:02.136,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:02.136,000] <wrn> mctp: Bridge to endpoint 0x8 failed
+[00:00:02.136,000] <err> i3c: SIR is not allowed by software
+[00:00:02.136,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:02.136,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:02.136,000] <wrn> mctp: mctp write data failed
+[00:00:04.385,000] <err> i3c: SIR is not allowed by software
+[00:00:04.385,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:04.385,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:04.385,000] <wrn> mctp: mctp write data failed
+[00:00:04.388,000] <err> i3c: SIR is not allowed by software
+[00:00:04.388,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:04.388,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:04.388,000] <wrn> mctp: Bridge to endpoint 0x8 failed
+[00:00:05.042,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0x9, ret: 5
+[00:00:05.139,000] <inf> util_sys: BIC Ready
+[00:00:05.139,000] <inf> plat_gpio: Reset USB Hub
+[00:00:05.816,000] <inf> usb_cdc_acm: Device resumed
+[00:00:05.816,000] <inf> usb_cdc_acm: from suspend
+[00:00:06.107,000] <inf> usb_cdc_acm: Device configured
+mctp ctrl msg timeout!!
+cmd 1, inst_id 0
+[00:11:23.572,000] <err> i3c: Un-handled HALT
+[00:11:24.572,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:24.572,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:25.947,000] <err> i3c: Un-handled HALT
+[00:11:26.948,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:26.948,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:27.950,000] <err> i3c: Un-handled HALT
+[00:11:28.950,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:28.950,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:29.992,000] <err> i3c: Un-handled HALT
+[00:11:30.992,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:30.992,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:31.990,000] <err> i3c: Un-handled HALT
+[00:11:32.990,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:32.990,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:33.991,000] <err> i3c: Un-handled HALT
+[00:11:34.991,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:34.991,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:35.162,000] <err> i3c: Un-handled HALT
+[00:11:36.162,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:36.162,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:37.468,000] <err> i3c: Un-handled HALT
+[00:11:38.468,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:38.468,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:39.480,000] <err> i3c: Un-handled HALT
+[00:11:40.480,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:40.480,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:41.974,000] <err> i3c: Un-handled HALT
+[00:11:42.974,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:42.974,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:43.995,000] <err> i3c: Un-handled HALT
+[00:11:44.995,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:44.995,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:45.210,000] <err> i3c: Un-handled HALT
+[00:11:46.210,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:46.210,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:47.539,000] <err> i3c: Un-handled HALT
+[00:11:48.539,000] <err> i3c: Enter halt state failed: -116 10000007 00000010
+[00:11:48.539,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0xa, ret: -116
+[00:11:56.827,000] <inf> hal_i3c: addr 0x70 already attach
+[00:11:56.908,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0x9, ret: 5
+mctp ctrl msg timeout!!
+cmd 1, inst_id 2
+mctp ctrl msg timeout!!
+cmd 1, inst_id 3
+墼)I旛00:00:00.002,000] <inf> usb_dc_asp*** Booting Zephyr OS build v00.01.06-77-g5228f41fce89  ***
+Hello, welcome to Yosemite V4 Sentinel Dome 2024.33.a1
+eed: select ep[0x81] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x82] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x1] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x2] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x3] as OUT endpoint
+[00:00:00.009,000] <inf> kcs_aspeed: KCS3: addr=0xca2, idr=0x2c, odr=0x38, str=0x44
+
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 1000000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi2_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi1_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.038,000] <inf> hal_gpio: TOTAL_GPIO_NUM: 168
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[0]: GPIO0_A_D
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[1]: GPIO0_E_H
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[2]: GPIO0_I_L
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[3]: GPIO0_M_P
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[4]: GPIO0_Q_T
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[5]: GPIO0_U_V
+[00:00:00.038,000] <err> pinmux_aspeed: pin 72 already occupied by 61
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 73 already occupied by 62
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 74 already occupied by 64
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 78 already occupied by 67
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 79 already occupied by 68
+
+[00:00:00.038,000] <inf> plat_class: Slot EID = 40, Slot ID = 4
+[00:00:00.039,000] <inf> plat_class: Retimer type: 0x0
+[00:00:00.039,000] <inf> plat_i3c: Start a thread to send setaasa
+[00:00:00.121,000] <err> sensor: Init sensor size is zero
+[00:00:00.121,000] <inf> pldm_sensor: Init PDR table
+[00:00:00.122,000] <inf> pldm_sensor: Init PLDM sensor monitor thread
+[00:00:00.123,000] <wrn> power_status: DC_STATUS: off
+[00:00:00.123,000] <wrn> power_status: POST_COMPLETE: no
+[00:00:00.123,000] <err> plat_pldm_sensor: Unable to change the ssd device due to its unknown blade config.
+[00:00:00.124,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0x9
+[00:00:00.125,000] <inf> mctp: mctp_rx_task start 0x56398
+[00:00:00.125,000] <inf> mctp: mctp_tx_task start 0x56398
+[00:00:00.125,000] <inf> mctp: mctp_rx_task start 0x57e78
+[00:00:00.125,000] <inf> mctp: mctp_tx_task start 0x57e78
+[00:00:00.125,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0xa
+[00:00:00.126,000] <inf> usb_cdc_acm: Device suspended
+[00:00:00.126,000] <inf> plat_dimm: Start thread to get dimm information
+[00:00:00.126,000] <inf> mctp: mctp_rx_task start 0x59b20
+[00:00:00.126,000] <inf> mctp: mctp_tx_task start 0x59b20
+[00:00:00.127,000] <inf> mctp: mctp_rx_task start 0x5b8d0
+[00:00:00.127,000] <inf> mctp: mctp_tx_task start 0x5b8d0
+
+
+uart:~$ [00:00:03.126,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0x9, ret: 5
+[00:00:05.127,000] <inf> util_sys: BIC Ready
+[00:00:05.127,000] <inf> plat_gpio: Reset USB Hub
+mctp ctrl msg timeout!!
+cmd 1, inst_id 0
+mctp ctrl msg timeout!!
+cmd 1, inst_id 1
+[00:01:06.628,000] <inf> usb_cdc_acm: Device resumed
+[00:01:06.628,000] <inf> usb_cdc_acm: from suspend
+[00:01:07.154,000] <inf> usb_cdc_acm: Device configured
+[00:01:32.919,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.920,000] <err> mctp: recv invalid len 1
+[00:01:32.923,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.923,000] <err> mctp: recv invalid len 1
+[00:01:32.923,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.923,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.923,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.923,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.924,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.924,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.924,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.924,000] <err> mctp: recv invalid len 1
+[00:01:32.924,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.925,000] <err> mctp: recv invalid len 1
+[00:01:32.927,000] <err> mctp: recv invalid len 1
+[00:01:32.928,000] <err> mctp: recv invalid len 1
+[00:01:32.928,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.929,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.929,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.929,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.929,000] <err> mctp: recv invalid len 1
+[00:01:32.930,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.930,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.930,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.930,000] <err> mctp: recv invalid len 1
+[00:01:32.931,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.931,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.931,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.932,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.932,000] <err> mctp: recv invalid len 1
+[00:01:32.932,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.932,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.933,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.933,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.933,000] <err> mctp: recv invalid len 1
+[00:01:32.933,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.934,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.934,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.934,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.934,000] <err> mctp: recv invalid len 1
+[00:01:32.935,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.935,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.935,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.935,000] <err> mctp: recv invalid len 1
+[00:01:32.935,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.936,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.936,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.937,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.937,000] <err> mctp: recv invalid len 1
+[00:01:32.937,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.937,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.938,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.938,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.938,000] <err> mctp: recv invalid len 1
+[00:01:32.938,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.939,000] <wrn> hal_i2c_target: Data not ready
+[00:01:32.939,000] <err> mctp: recv invalid len 1
+[00:01:32.941,000] <err> mctp: recv invalid len 1
+[00:01:32.942,000] <err> mctp: recv invalid len 1
+[00:01:32.943,000] <err> mctp: recv invalid len 1
+[00:01:32.945,000] <err> mctp: recv invalid len 1
+[00:02:04.204,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:02:04.204,000] <err> dev_pt5161l: pt5161l write block failed
+[00:02:04.204,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:02:04.204,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:02:04.204,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:02:04.204,000] <err> dev_pt5161l: pt5161l write block failed
+[00:02:04.204,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:02:04.204,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:02:11.567,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:02:11.567,000] <err> dev_pt5161l: pt5161l write block failed
+[00:02:11.567,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:02:11.567,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:02:11.568,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:02:11.568,000] <err> dev_pt5161l: pt5161l write block failed
+[00:02:11.568,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:02:11.568,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:02:25.464,000] <inf> usb_cdc_acm: Device suspended
+[00:02:54.279,000] <inf> usb_cdc_acm: Device resumed
+[00:02:54.279,000] <inf> usb_cdc_acm: from suspend
+[00:02:54.311,000] <inf> usb_cdc_acm: Device configured
+[00:11:28.126,000] <inf> usb_cdc_acm: Device suspended
+[00:12:29.033,000] <inf> usb_cdc_acm: Device resumed
+[00:12:29.033,000] <inf> usb_cdc_acm: from suspend
+[00:12:29.354,000] <inf> usb_cdc_acm: Device configured
+[00:12:55.202,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.202,000] <err> mctp: recv invalid len 1
+[00:12:55.202,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.203,000] <err> mctp: recv invalid len 1
+[00:12:55.203,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.204,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.204,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.204,000] <err> mctp: recv invalid len 1
+[00:12:55.206,000] <err> mctp: recv invalid len 1
+[00:12:55.207,000] <err> mctp: recv invalid len 1
+[00:12:55.207,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.208,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.208,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.208,000] <err> mctp: recv invalid len 1
+[00:12:55.209,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.209,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.209,000] <err> mctp: recv invalid len 1
+[00:12:55.210,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.210,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.211,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.211,000] <err> mctp: recv invalid len 1
+[00:12:55.211,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.211,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.212,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.212,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.212,000] <err> mctp: recv invalid len 1
+[00:12:55.212,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.213,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.213,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.213,000] <err> mctp: recv invalid len 1
+[00:12:55.214,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.214,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.215,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.215,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.215,000] <err> mctp: recv invalid len 1
+[00:12:55.215,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.215,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.216,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.216,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.216,000] <err> mctp: recv invalid len 1
+[00:12:55.216,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.217,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.217,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.217,000] <err> mctp: recv invalid len 1
+[00:12:55.217,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.218,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.218,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.219,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.219,000] <err> mctp: recv invalid len 1
+[00:12:55.219,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.219,000] <wrn> hal_i2c_target: Data not ready
+[00:12:55.220,000] <err> mctp: recv invalid len 1
+[00:12:55.221,000] <err> mctp: recv invalid len 1
+[00:12:55.222,000] <err> mctp: recv invalid len 1
+[00:12:55.224,000] <err> mctp: recv invalid len 1
+[00:12:55.225,000] <err> mctp: recv invalid len 1
+[00:12:55.226,000] <err> mctp: recv invalid len 1
+[00:12:55.227,000] <err> mctp: recv invalid len 1
+[00:13:25.684,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:13:25.684,000] <err> dev_pt5161l: pt5161l write block failed
+[00:13:25.684,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:13:25.684,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:13:25.685,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:13:25.685,000] <err> dev_pt5161l: pt5161l write block failed
+[00:13:25.685,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:13:25.685,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:13:31.914,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:13:31.914,000] <err> dev_pt5161l: pt5161l write block failed
+[00:13:31.914,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:13:31.914,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:13:31.914,000] <err> hal_i2c: I2C 5 master write retry reach max with ret -6
+[00:13:31.914,000] <err> dev_pt5161l: pt5161l write block failed
+[00:13:31.914,000] <err> dev_pt5161l: Write eeprom addr 32640 failed
+[00:13:31.914,000] <err> dev_pt5161l: Read PT5161L main version failed
+[00:13:54.180,000] <inf> plat_isr: slp3
+[00:13:54.245,000] <wrn> power_status: DC_STATUS: on
+[00:13:54.245,000] <inf> hal_i3c: addr 0x70 already attach
+[00:13:54.326,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0x9, ret: 5
+[00:13:55.842,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+[00:13:55.846,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+[00:13:55.849,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+[00:13:55.852,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+[00:13:55.855,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+[00:13:55.858,000] <err> dev_pt5161l: Tetimer test read eeprom failed
+mctp ctrl msg timeout!!
+cmd 1, inst_id 2
+pldm msg timeout!!
+cmd 2, inst_id 0
+[00:14:04.245,000] <inf> plat_isr: FRB3 checked pass
+[00:16:54.343,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 57
+[00:16:54.644,000] <inf> ipmi: frb2 wdt start!
+[00:16:54.744,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 22
+[00:17:08.758,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 57
+[00:17:09.058,000] <err> ipmi: Invalid chassis msg netfn: 0, cmd: 9
+[00:17:09.158,000] <err> ipmi: invalid OEM msg netfn: 30, cmd: 53
+[00:17:09.459,000] <err> ipmi: invalid Storage msg netfn: a, cmd: 40
+[00:17:09.659,000] <err> ipmi: invalid Storage msg netfn: a, cmd: 20
+[00:17:09.859,000] <err> ipmi: invalid Storage msg netfn: a, cmd: 5c
+[00:17:09.959,000] <err> ipmi: invalid Storage msg netfn: a, cmd: 48
+[00:17:10.259,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 2e
+[00:17:25.717,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 57
+[00:17:28.620,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 2e
+[00:17:40.044,000] <err> plat_pldm: Read http attribute fail, cc: 0x5
+[00:17:40.044,000] <err> plat_ipmi: Failed to get http boot attributes, ret: 0x1
+[00:17:40.132,000] <err> plat_ipmi: Failed to get the blade configuration
+[00:17:49.942,000] <inf> ipmi: frb2 wdt stop!
+[00:17:50.142,000] <inf> ipmi: frb2 wdt start!
+[00:17:50.242,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 22
+[00:17:51.043,000] <err> ipmi: invalid Storage msg netfn: a, cmd: 40
+[00:17:51.143,000] <err> ipmi: invalid OEM msg netfn: 30, cmd: f2
+[00:17:51.243,000] <err> ipmi: invalid OEM msg netfn: 30, cmd: f2
+[00:17:51.343,000] <err> ipmi: invalid OEM msg netfn: 30, cmd: 37
+[00:17:51.543,000] <err> ipmi: Invalid chassis msg netfn: 0, cmd: 9
+[00:17:52.044,000] <err> ipmi: Invalid chassis msg netfn: 0, cmd: 9
+[00:17:52.244,000] <inf> ipmi: frb2 wdt stop!
+[00:17:59.251,000] <inf> ipmi: frb2 wdt start!
+[00:17:59.351,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 22
+[00:18:01.932,000] <wrn> power_status: POST_COMPLETE: yes
+[00:18:01.933,000] <inf> apml: SBRMI_CONTROL read
+[00:18:01.934,000] <inf> apml: SBRMI_CONTROL written
+[00:18:01.934,000] <inf> apml: SBRMI_CONTROL read
+[00:18:01.934,000] <inf> apml: SBRMI_CONTROL written
+[00:18:01.934,000] <inf> plat_isr: Post complete event assert
+[00:18:01.968,000] <inf> plat_isr: APML_ALERT detected
+[00:18:02.006,000] <inf> plat_isr: APML_ALERT detected
+[00:18:02.254,000] <err> ipmi: invalid OEM msg netfn: 30, cmd: 37
+[00:18:04.557,000] <inf> ipmi: frb2 wdt stop!
+[00:18:45.598,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 2e
+[00:18:45.798,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 2e
+[00:18:45.998,000] <err> ipmi: Invalid APP msg netfn: 6, cmd: 8
+[00:23:04.882,000] <inf> usb_cdc_acm: Device suspended
+[00:24:06.885,000] <inf> usb_cdc_acm: Device resumed
+[00:24:06.885,000] <inf> usb_cdc_acm: from suspend
+[00:24:07.337,000] <inf> usb_cdc_acm: Device configured
+[00:24:33.300,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.300,000] <err> mctp: recv invalid len 1
+[00:24:33.300,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.301,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.302,000] <err> mctp: recv invalid len 1
+[00:24:33.302,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.302,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.303,000] <err> mctp: recv invalid len 1
+[00:24:33.304,000] <err> mctp: recv invalid len 1
+[00:24:33.305,000] <err> mctp: recv invalid len 1
+[00:24:33.306,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.306,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.306,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.307,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.307,000] <err> mctp: recv invalid len 1
+[00:24:33.307,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.307,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.307,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.308,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.308,000] <err> mctp: recv invalid len 1
+[00:24:33.308,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.308,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.309,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.309,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.309,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.309,000] <err> mctp: recv invalid len 1
+[00:24:33.310,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.310,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.310,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.311,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.311,000] <err> mctp: recv invalid len 1
+[00:24:33.311,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.311,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.311,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.312,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.312,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.312,000] <err> mctp: recv invalid len 1
+[00:24:33.313,000] <err> mctp: recv invalid len 1
+[00:24:33.314,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.314,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.314,000] <err> mctp: recv invalid len 1
+[00:24:33.315,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.315,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.315,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.316,000] <err> mctp: recv invalid len 1
+[00:24:33.316,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.316,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.317,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.317,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.317,000] <err> mctp: recv invalid len 1
+[00:24:33.317,000] <wrn> hal_i2c_target: Data not ready
+[00:24:33.318,000] <err> mctp: recv invalid len 1
+[00:24:33.319,000] <err> mctp: recv invalid len 1
+[00:24:33.321,000] <err> mctp: recv invalid len 1
+[00:24:33.322,000] <err> mctp: recv invalid len 1
+[00:24:33.323,000] <err> mctp: recv invalid len 1
+[00:24:33.324,000] <err> mctp: recv invalid len 1
+[00:24:33.326,000] <err> mctp: recv invalid len 1
+[00:24:33.327,000] <err> mctp: recv invalid len 1
+[00:25:40.962,000] <inf> usb_cdc_acm: Device suspended
+[00:26:42.799,000] <inf> usb_cdc_acm: Device resumed
+[00:26:42.799,000] <inf> usb_cdc_acm: from suspend
+[00:26:43.131,000] <inf> usb_cdc_acm: Device configured
+[00:27:09.475,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.476,000] <err> mctp: recv invalid len 1
+[00:27:09.476,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.476,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.477,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.477,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.477,000] <err> mctp: recv invalid len 1
+[00:27:09.477,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.477,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.478,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.478,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.478,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.478,000] <err> mctp: recv invalid len 1
+[00:27:09.479,000] <err> mctp: recv invalid len 1
+[00:27:09.481,000] <err> mctp: recv invalid len 1
+[00:27:09.482,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.482,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.482,000] <err> mctp: recv invalid len 1
+[00:27:09.482,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.483,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.483,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.483,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.483,000] <err> mctp: recv invalid len 1
+[00:27:09.484,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.484,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.484,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.485,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.485,000] <err> mctp: recv invalid len 1
+[00:27:09.485,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.485,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.486,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.486,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.486,000] <err> mctp: recv invalid len 1
+[00:27:09.486,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.487,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.487,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.487,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.487,000] <err> mctp: recv invalid len 1
+[00:27:09.488,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.488,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.488,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.489,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.489,000] <err> mctp: recv invalid len 1
+[00:27:09.489,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.489,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.490,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.490,000] <err> mctp: recv invalid len 1
+[00:27:09.490,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.490,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.491,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.491,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.491,000] <err> mctp: recv invalid len 1
+[00:27:09.491,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.492,000] <err> mctp: recv invalid len 1
+[00:27:09.493,000] <err> mctp: recv invalid len 1
+[00:27:09.494,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.495,000] <wrn> hal_i2c_target: Data not ready
+[00:27:09.495,000] <err> mctp: recv invalid len 1
+[00:27:09.496,000] <err> mctp: recv invalid len 1
+[00:27:09.497,000] <err> mctp: recv invalid len 1
+[00:28:17.674,000] <inf> usb_cdc_acm: Device suspended
+[00:29:19.527,000] <inf> usb_cdc_acm: Device resumed
+[00:29:19.527,000] <inf> usb_cdc_acm: from suspend
+[00:29:19.856,000] <inf> usb_cdc_acm: Device configured
+[00:29:46.198,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.199,000] <err> mctp: recv invalid len 1
+[00:29:46.199,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.199,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.199,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.199,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.200,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.200,000] <err> mctp: recv invalid len 1
+[00:29:46.200,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.200,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.200,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.201,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.201,000] <err> mctp: recv invalid len 1
+[00:29:46.202,000] <err> mctp: recv invalid len 1
+[00:29:46.204,000] <err> mctp: recv invalid len 1
+[00:29:46.204,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.205,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.205,000] <err> mctp: recv invalid len 1
+[00:29:46.205,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.205,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.206,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.206,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.206,000] <err> mctp: recv invalid len 1
+[00:29:46.206,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.207,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.207,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.207,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.207,000] <err> mctp: recv invalid len 1
+[00:29:46.208,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.208,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.208,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.209,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.209,000] <err> mctp: recv invalid len 1
+[00:29:46.209,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.209,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.210,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.210,000] <err> mctp: recv invalid len 1
+[00:29:46.211,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.211,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.211,000] <wrn> hal_i2c_target: Data not ready
+[00:29:46.211,000] <err> mctp: recv invalid len 1
+[00:29:46.213,000] <err> mctp: recv invalid len 1
+[00:29:46.214,000] <err> mctp: recv invalid len 1
+[00:29:46.215,000] <err> mctp: recv invalid len 1
+[00:29:46.216,000] <err> mctp: recv invalid len 1
+[00:29:46.218,000] <err> mctp: recv invalid len 1
+[00:29:46.219,000] <err> mctp: recv invalid len 1
+[00:29:46.220,000] <err> mctp: recv invalid len 1
+[00:29:46.221,000] <err> mctp: recv invalid len 1
+[00:29:46.223,000] <err> mctp: recv invalid len 1
+墼)I旛00:00:00.002,000] <inf> usb_dc_asp*** Booting Zephyr OS build v00.01.06-77-g5228f41fce89  ***
+Hello, welcome to Yosemite V4 Sentinel Dome 2024.33.a1
+eeRST: WDT2 SOC
+d: select ep[0x81] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x82] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x1] as IN endpoint
+[00:00:00.002,000] <wrn> usb_dc_aspeed: pre-selected ep[0x2] as IN endpoint
+[00:00:00.002,000] <inf> usb_dc_aspeed: select ep[0x3] as OUT endpoint
+[00:00:00.009,000] <inf> kcs_aspeed: KCS3: addr=0xca2, idr=0x2c, odr=0x38, str=0x44
+
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 1000000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <inf> i3c: core_rate 200000000 hz (5 ns)
+[00:00:00.009,000] <inf> i3c: i2c-scl = 1000000, i3c-scl = 12500000
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi2_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1347][spi1_cs0]SFDP magic 00000000 invalid
+[00:00:00.009,000] <err> spi_nor_multi_dev: [1609]SFDP read failed: -22
+[00:00:00.037,000] <inf> hal_gpio: TOTAL_GPIO_NUM: 168
+[00:00:00.037,000] <inf> hal_gpio: gpio_dev_str[0]: GPIO0_A_D
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[1]: GPIO0_E_H
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[2]: GPIO0_I_L
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[3]: GPIO0_M_P
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[4]: GPIO0_Q_T
+[00:00:00.038,000] <inf> hal_gpio: gpio_dev_str[5]: GPIO0_U_V
+[00:00:00.038,000] <err> pinmux_aspeed: pin 72 already occupied by 61
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 73 already occupied by 62
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 74 already occupied by 64
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 78 already occupied by 67
+
+[00:00:00.038,000] <err> pinmux_aspeed: pin 79 already occupied by 68
+
+[00:00:00.041,000] <inf> plat_class: Slot EID = 40, Slot ID = 4
+[00:00:00.042,000] <inf> plat_class: Retimer type: 0x0
+[00:00:00.042,000] <inf> plat_i3c: Start a thread to send setaasa
+[00:00:00.124,000] <err> sensor: Init sensor size is zero
+[00:00:00.124,000] <inf> pldm_sensor: Init PDR table
+[00:00:00.125,000] <inf> pldm_sensor: Init PLDM sensor monitor thread
+[00:00:00.125,000] <wrn> power_status: DC_STATUS: on
+[00:00:00.125,000] <wrn> power_status: POST_COMPLETE: yes
+[00:00:00.125,000] <err> plat_pldm_sensor: Unable to change the ssd device due to its unknown blade config.
+[00:00:00.128,000] <inf> usb_cdc_acm: Device suspended
+[00:00:00.132,000] <inf> apml: SBRMI_CONTROL read
+[00:00:00.133,000] <inf> apml: SBRMI_CONTROL written
+[00:00:00.134,000] <inf> apml: SBRMI_CONTROL read
+[00:00:00.135,000] <inf> apml: SBRMI_CONTROL written
+[00:00:00.135,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0x9
+[00:00:00.136,000] <inf> mctp: mctp_rx_task start 0x56398
+[00:00:00.136,000] <inf> mctp: mctp_tx_task start 0x56398
+[00:00:00.136,000] <inf> mctp: mctp_rx_task start 0x58040
+[00:00:00.137,000] <inf> mctp: mctp_tx_task start 0x58040
+[00:00:00.137,000] <inf> mctp_i3c: Bus= 0x1, Addr = 0xa
+[00:00:00.138,000] <inf> mctp: mctp_rx_task start 0x59ce8
+[00:00:00.138,000] <inf> mctp: mctp_tx_task start 0x59ce8
+[00:00:00.139,000] <inf> plat_dimm: Start thread to get dimm information
+[00:00:00.140,000] <inf> mctp: mctp_rx_task start 0x5b990
+[00:00:00.140,000] <inf> mctp: mctp_tx_task start 0x5b990
+[00:00:00.150,000] <inf> plat_isr: APML_ALERT detected
+[00:00:00.152,000] <err> i3c: SIR is not allowed by software
+[00:00:00.152,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.152,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.152,000] <wrn> mctp: mctp write data failed
+[00:00:00.152,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.152,000] <wrn> pldm: Send msg failed!
+[00:00:00.152,000] <err> i3c: SIR is not allowed by software
+[00:00:00.152,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.152,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.152,000] <wrn> mctp: mctp write data failed
+[00:00:00.152,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.152,000] <wrn> pldm: Send msg failed!
+[00:00:00.153,000] <err> i3c: SIR is not allowed by software
+[00:00:00.153,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.153,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.153,000] <wrn> mctp: mctp write data failed
+[00:00:00.153,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.153,000] <wrn> pldm: Send msg failed!
+[00:00:00.153,000] <wrn> pldm: Retry reach max!
+[00:00:00.153,000] <err> plat_isr: mctp_pldm_read fail
+[00:00:00.212,000] <inf> plat_isr: APML_ALERT detected
+[00:00:00.213,000] <err> i3c: SIR is not allowed by software
+[00:00:00.213,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.213,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.213,000] <wrn> mctp: mctp write data failed
+[00:00:00.213,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.214,000] <wrn> pldm: Send msg failed!
+[00:00:00.214,000] <err> i3c: SIR is not allowed by software
+[00:00:00.214,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.214,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.214,000] <wrn> mctp: mctp write data failed
+[00:00:00.214,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.214,000] <wrn> pldm: Send msg failed!
+[00:00:00.214,000] <err> i3c: SIR is not allowed by software
+[00:00:00.214,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.214,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.214,000] <wrn> mctp: mctp write data failed
+[00:00:00.214,000] <err> pldm: mctp_send_msg error!!
+[00:00:00.214,000] <wrn> pldm: Send msg failed!
+[00:00:00.214,000] <wrn> pldm: Retry reach max!
+[00:00:00.214,000] <err> plat_isr: mctp_pldm_read fail
+[00:00:00.585,000] <err> i3c: SIR is not allowed by software
+[00:00:00.585,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:00.585,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:00.585,000] <wrn> mctp: mctp write data failed
+
+
+uart:~$ [00:00:02.426,000] <err> i3c: SIR is not allowed by software
+[00:00:02.426,000] <err> hal_i3c: I3C wrtie failed, ret = -13
+[00:00:02.426,000] <err> mctp_i3c: mctp_i3c_write_smq write failed, -13
+[00:00:02.426,000] <wrn> mctp: mctp write data failed
+[00:00:05.042,000] <err> hal_i3c: Failed to write messages to bus 0x1 addr 0x9, ret: 5
+[00:00:05.140,000] <inf> util_sys: BIC Ready
+[00:00:05.140,000] <inf> plat_gpio: Reset USB Hub
+[00:00:05.933,000] <inf> usb_cdc_acm: Device resumed
+[00:00:05.933,000] <inf> usb_cdc_acm: from suspend
+[00:00:06.220,000] <inf> usb_cdc_acm: Device configured
+mctp ctrl msg timeout!!
+cmd 1, inst_id 0
+
