@@ -1,0 +1,626 @@
+root@bmc:~# journalctl | grep pldm
+Sep 09 23:52:15 bmc (pldmd)[611]: pldmd.service: Referenced but unset environment variable evaluates to an empty string: PLDMD_ARGS
+Sep 09 23:52:16 bmc pldmd[611]: Bios Attribute file path: /usr/share/pldm/bios/bios_attrs.json
+Sep 09 23:52:16 bmc pldmd[611]: Failed to getSubtree call at path '/xyz/openbmc_project/mctp' and interface 'xyz.openbmc_project.MCTP.Endpoint', error - sd_bus_call: xyz.openbmc_project.Common.Error.ResourceNotFound: The resource is not found.
+Sep 09 23:52:16 bmc pldmd[611]: Successfully initialized platform manager
+Sep 09 23:52:16 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:16 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:31 bmc pldmd[611]: Successfully initialized platform manager
+Sep 09 23:52:31 bmc pldmd[611]: Successfully initialized platform manager
+Sep 09 23:52:33 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:38 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:39 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_2/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_2/BIC'.
+Sep 09 23:52:43 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_3/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_3/BIC'.
+Sep 09 23:52:43 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_4/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_4/BIC'.
+Sep 09 23:52:43 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_5/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_5/BIC'.
+Sep 09 23:52:44 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_6/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_6/BIC'.
+Sep 09 23:52:45 bmc pldmd[611]: appendConfigIfEidMatch: Failed to getAll of interface=xyz.openbmc_project.Configuration.MCTPEndpoint in path=/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_7/BIC, error=sd_bus_call: org.freedesktop.DBus.Error.UnknownObject: Unknown object '/xyz/openbmc_project/inventory/system/board/Yosemite_4_Sentinel_Dome_T2_with_Retimer_Slot_7/BIC'.
+Sep 09 23:52:50 bmc pldmd[611]: Instance ID expiry for EID '20' using InstanceID '0'
+Sep 09 23:52:50 bmc pldmd[611]: sdeventplus: eventCallback: Instance ID 0 for TID 20 was not previously allocated
+Sep 09 23:52:50 bmc pldmd[611]: No response received for query device identifiers for endpoint ID '20'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:50 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:50 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:50 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:50 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:50 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:50 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:50 bmc pldmd[611]: PLDM type 2 command 81 is supported by terminus 10
+Sep 09 23:52:50 bmc pldmd[611]: PLDM type 2 command 80 is supported by terminus 10
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:50 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:50 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:50 bmc pldmd[611]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:50 bmc pldmd[611]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:50 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:54 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Removing Endpoint networkId '1' and  EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: sdeventplus: ioCallback: Instance ID 14 for TID 10 was not previously allocated
+Sep 09 23:52:55 bmc pldmd[611]: sdeventplus: ioCallback: Instance ID 1 for TID 62 was not previously allocated
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[611]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:55 bmc systemd[1]: pldmd.service: Deactivated successfully.
+Sep 09 23:52:55 bmc (pldmd)[1904]: pldmd.service: Referenced but unset environment variable evaluates to an empty string: PLDMD_ARGS
+Sep 09 23:52:55 bmc pldmd[1904]: Bios Attribute file path: /usr/share/pldm/bios/bios_attrs.json
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '10'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '12'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '20'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '22'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '30'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '32'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '40'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '42'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '50'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '52'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '60'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '62'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '70'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '72'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '80'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '82'
+Sep 09 23:52:55 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '90'
+Sep 09 23:52:58 bmc pldmd[1904]: Failed to send pldmTransport message, response code 'Enum(-7)' and error - 113
+Sep 09 23:52:58 bmc pldmd[1904]: Failure to send the PLDM request message for polling endpoint queue, response code '1'
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 80 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 90 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 20 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 72 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 30 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 40 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 60 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 50 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 70 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 32 was not previously allocated
+Sep 09 23:52:58 bmc systemd[1]: pldm-slow-restart.service: Deactivated successfully.
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 52 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 62 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 82 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 12 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 22 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: sdeventplus: ioCallback: Instance ID 0 for TID 42 was not previously allocated
+Sep 09 23:52:58 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '91'
+Sep 09 23:52:58 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 1, complete code 132.
+Sep 09 23:52:58 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 1, complete code 132.
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 1
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 1
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 1 handle 10
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1100
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1150
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 20 handle 2500
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1170
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1400
+Sep 09 23:52:58 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1401
+Sep 09 23:52:58 bmc pldmd[1904]: Terminus ID 1: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 13 is supported by terminus 1
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 12 is supported by terminus 1
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 1
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 10
+Sep 09 23:52:58 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 10
+Sep 09 23:52:59 bmc pldmd[1904]: Terminus ID 10: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:52:59 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 10
+Sep 09 23:52:59 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 12
+Sep 09 23:52:59 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 12
+Sep 09 23:53:00 bmc pldmd[1904]: Terminus ID 12: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 12
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 20
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 20
+Sep 09 23:53:00 bmc pldmd[1904]: Terminus ID 20: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 20
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 22
+Sep 09 23:53:00 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 22
+Sep 09 23:53:01 bmc pldmd[1904]: Terminus ID 22: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 22
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 30
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 30
+Sep 09 23:53:01 bmc pldmd[1904]: Terminus ID 30: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 30
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 32
+Sep 09 23:53:01 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 32
+Sep 09 23:53:02 bmc pldmd[1904]: Terminus ID 32: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 32
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 40
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 40
+Sep 09 23:53:02 bmc pldmd[1904]: Terminus ID 40: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 40
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 42
+Sep 09 23:53:02 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 42
+Sep 09 23:53:03 bmc pldmd[1904]: Terminus ID 42: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 42
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 50
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 50
+Sep 09 23:53:03 bmc pldmd[1904]: Terminus ID 50: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 50
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 52
+Sep 09 23:53:03 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 52
+Sep 09 23:53:04 bmc pldmd[1904]: Terminus ID 52: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 52
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 60
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 60
+Sep 09 23:53:04 bmc pldmd[1904]: Terminus ID 60: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 60
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 62
+Sep 09 23:53:04 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 62
+Sep 09 23:53:05 bmc pldmd[1904]: Terminus ID 62: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 62
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 70
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 70
+Sep 09 23:53:05 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '92'
+Sep 09 23:53:05 bmc pldmd[1904]: Terminus ID 70: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 70
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 72
+Sep 09 23:53:05 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 72
+Sep 09 23:53:06 bmc pldmd[1904]: Terminus ID 72: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:06 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 72
+Sep 09 23:53:06 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 80
+Sep 09 23:53:06 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 80
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 80: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 80
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 82
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 82
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 82: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 82
+Sep 09 23:53:07 bmc pldmd[1904]: Successfully initialized platform manager
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 10: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 12: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 20: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 22: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 30: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 32: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 40: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 42: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 50: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 52: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 60: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 62: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 70: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 72: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 80: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 82: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 1: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 2, complete code 132.
+Sep 09 23:53:07 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 2, complete code 132.
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 2
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 2
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 1 handle 10
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1100
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1150
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 20 handle 2500
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1170
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1400
+Sep 09 23:53:07 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1401
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 2: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 13 is supported by terminus 2
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 12 is supported by terminus 2
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 2
+Sep 09 23:53:07 bmc pldmd[1904]: Successfully initialized platform manager
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 10: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 12: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 20: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 22: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 30: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 32: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 40: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 42: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 50: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 52: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 60: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 62: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 70: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 72: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 80: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 82: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 1: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Terminus ID 2: no sensors to poll.
+Sep 09 23:53:07 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 3, complete code 132.
+Sep 09 23:53:07 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 3, complete code 132.
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 3
+Sep 09 23:53:07 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 3
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 1 handle 10
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1100
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1150
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 20 handle 2500
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1170
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1400
+Sep 09 23:53:08 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1401
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 3: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:08 bmc pldmd[1904]: PLDM type 2 command 13 is supported by terminus 3
+Sep 09 23:53:08 bmc pldmd[1904]: PLDM type 2 command 12 is supported by terminus 3
+Sep 09 23:53:08 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 3
+Sep 09 23:53:08 bmc pldmd[1904]: Successfully initialized platform manager
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 10: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 12: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 20: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 22: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 30: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 32: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 40: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 42: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 50: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 52: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 60: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 62: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 70: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 72: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 80: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 82: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 1: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 2: no sensors to poll.
+Sep 09 23:53:08 bmc pldmd[1904]: Terminus ID 3: no sensors to poll.
+Sep 09 23:53:13 bmc pldmd[1904]: Adding Endpoint networkId '1' and EID '93'
+Sep 09 23:53:13 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 4, complete code 132.
+Sep 09 23:53:13 bmc pldmd[1904]: Error : GetPLDMCommands for terminus ID 4, complete code 132.
+Sep 09 23:53:13 bmc pldmd[1904]: PLDM type 2 command 81 is supported by terminus 4
+Sep 09 23:53:13 bmc pldmd[1904]: PLDM type 2 command 80 is supported by terminus 4
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 1 handle 10
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1100
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 15 handle 1150
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 20 handle 2500
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1170
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1400
+Sep 09 23:53:13 bmc pldmd[1904]: Unsupported PDR with type 4 handle 1401
+Sep 09 23:53:13 bmc pldmd[1904]: Terminus ID 4: DOES NOT have name. Skip Adding sensors.
+Sep 09 23:53:13 bmc pldmd[1904]: PLDM type 2 command 13 is supported by terminus 4
+Sep 09 23:53:13 bmc pldmd[1904]: PLDM type 2 command 12 is supported by terminus 4
+Sep 09 23:53:13 bmc pldmd[1904]: PLDM type 2 command 4 is supported by terminus 4
+Sep 09 23:53:13 bmc pldmd[1904]: Successfully initialized platform manager
+Sep 09 23:53:13 bmc pldmd[1904]: Terminus ID 4: no sensors to poll.
