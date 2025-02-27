@@ -1,0 +1,2232 @@
+Mem: 368988K used, 480208K free, 69700K shrd, 27360K buff, 199440K cached
+CPU:  11% usr   2% sys   0% nic  44% idle  42% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46167
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+46166 43605 root     R     3504   0%   3   4% top -bn1
+  782     1 root     S    25960   3%   2   2% /usr/bin/bmcweb
+  604     1 root     S    17716   2%   1   2% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  373     1 root     S     8980   1%   0   2% /usr/libexec/phosphor-objmgr/mapperx
+  295   294 messageb S     4092   0%   1   2% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-cgr]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-cgr]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 369488K used, 479708K free, 69700K shrd, 27360K buff, 199440K cached
+CPU:   0% usr   2% sys   0% nic  46% idle  48% io   0% irq   2% sirq
+Load average: 1.14 0.53 0.27 1/189 46171
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+46171 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-cgr]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-cgr]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 369236K used, 479960K free, 69712K shrd, 27360K buff, 199452K cached
+CPU:   0% usr   2% sys   0% nic  47% idle  50% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46175
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+46175 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-mm_]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-cgr]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368932K used, 480264K free, 69744K shrd, 27360K buff, 199484K cached
+CPU:   0% usr   4% sys   0% nic  46% idle  48% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46179
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+46179 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-mm_]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368680K used, 480516K free, 69756K shrd, 27360K buff, 199496K cached
+CPU:   0% usr   2% sys   0% nic  50% idle  47% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46183
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+46183 43605 root     R     3504   0%   0   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368932K used, 480264K free, 69772K shrd, 27360K buff, 199512K cached
+CPU:   0% usr   4% sys   0% nic  50% idle  45% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46187
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  303     1 root     S     295m  36%   1   2% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+46187 43605 root     R     3504   0%   0   2% top -bn1
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   0   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   2   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-f]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368680K used, 480516K free, 69784K shrd, 27360K buff, 199524K cached
+CPU:   2% usr  12% sys   0% nic  44% idle  36% io   2% irq   2% sirq
+Load average: 1.14 0.53 0.27 1/189 46191
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  788     1 root     S    79068   9%   2   6% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+46191 43605 root     R     3504   0%   0   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   3   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   3   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368932K used, 480264K free, 69796K shrd, 27360K buff, 199536K cached
+CPU:   0% usr   6% sys   0% nic  45% idle  47% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 2/189 46195
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  788     1 root     R    79068   9%   2   3% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+46195 43605 root     R     3504   0%   3   3% top -bn1
+46150     1 root     R    98692  12%   2   1% /usr/bin/pldmd --verbose 0
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   3   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 369184K used, 480012K free, 69812K shrd, 27360K buff, 199552K cached
+CPU:   4% usr  10% sys   0% nic  36% idle  46% io   2% irq   0% sirq
+Load average: 1.14 0.53 0.27 2/189 46199
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  788     1 root     S    79068   9%   2   6% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+46150     1 root     S    98692  12%   2   2% /usr/bin/pldmd --verbose 0
+46199 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   2   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-mm_]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-mm_]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-eve]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 369436K used, 479760K free, 69824K shrd, 27360K buff, 199564K cached
+CPU:   2% usr  13% sys   0% nic  36% idle  47% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46203
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  788     1 root     S    79068   9%   2   7% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+46150     1 root     S    98692  12%   2   2% /usr/bin/pldmd --verbose 0
+46203 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   2   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-mm_]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-mm_]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-mm_]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 369488K used, 479708K free, 69840K shrd, 27360K buff, 199580K cached
+CPU:   4% usr   4% sys   0% nic  42% idle  48% io   0% irq   0% sirq
+Load average: 1.14 0.53 0.27 1/189 46207
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+  788     1 root     R    79068   9%   2   2% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   2   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   2   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+    1     0 root     S    20236   2%   1   0% {systemd} /sbin/init
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  602     1 root     S    16476   2%   0   0% phosphor-dump-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  392     1 root     S    11864   1%   3   0% /usr/libexec/entity-manager/entity-manager
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  373     1 root     S     8980   1%   0   0% /usr/libexec/phosphor-objmgr/mapperx
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46207 43605 root     R     3504   0%   1   0% top -bn1
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   0   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-mm_]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   3   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+42700     2 root     IW       0   0%   3   0% [kworker/u12:1-e]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-mm_]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
+Mem: 368988K used, 480208K free, 69652K shrd, 27360K buff, 199392K cached
+CPU:  15% usr   6% sys   0% nic  39% idle  36% io   0% irq   2% sirq
+Load average: 1.14 0.53 0.27 2/189 46212
+  PID  PPID USER     STAT   VSZ %VSZ CPU %CPU COMMAND
+    1     0 root     R    20236   2%   2   4% {systemd} /sbin/init
+  602     1 root     S    16476   2%   0   2% phosphor-dump-manager
+  392     1 root     S    11864   1%   0   2% /usr/libexec/entity-manager/entity-manager
+  373     1 root     S     8980   1%   1   2% /usr/libexec/phosphor-objmgr/mapperx
+46211 43605 root     R     3504   0%   1   2% top -bn1
+  303     1 root     S     295m  36%   1   0% /usr/bin/gpio-status-handlerd /usr/share/gpio-config.json
+ 1595     1 root     S     157m  19%   3   0% monitor-eventingd -d /run/initramfs/ro/usr/share/mon_evt/dat.json -e /run/initramfs/ro/usr/share/mon_evt/event_info.json
+ 2534     1 root     S     147m  18%   0   0% /usr/sbin/rsyslogd -n -iNONE
+  211     1 root     S     102m  12%   2   0% /usr/lib/systemd/systemd-journald
+46150     1 root     S    98692  12%   1   0% /usr/bin/pldmd --verbose 0
+  368     1 root     S    82144  10%   0   0% /usr/libexec/entity-manager/fru-device
+  788     1 root     S    79068   9%   2   0% /usr/bin/mctp-demux-daemon usb json_file=/usr/share/mctp/mctp_cfg_usb.json port_path=1-1
+  782     1 root     S    25960   3%   2   0% /usr/bin/bmcweb
+  323     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststore --path /etc/ssl/certs/authority --type authority --unit bmcweb.service
+  324     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint truststoreBios --path /etc/ssl/certs/authorityBios --type authorityBios --unit bmcweb.service
+  333     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNoneDefault --path /etc/profile-manager/authority/noneDefault --type authority --unit
+  335     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileNvidia --path /etc/profile-manager/authority/nvidia --type authority --unit
+  336     1 root     S    22032   3%   0   0% /usr/bin/phosphor-certificate-manager --endpoint profileOem --path /etc/profile-manager/authority/oem --type authority --unit
+  331     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint https --path /etc/ssl/certs/https/server.pem --type server --unit bmcweb.service
+  332     1 root     S    21904   3%   1   0% /usr/bin/phosphor-certificate-manager --endpoint ldap --path /etc/nslcd/certs/cert.pem --type client --unit
+  476     1 root     S    21716   3%   3   0% /usr/bin/code-manager -u DebugTokenErase
+  443     1 root     S    21468   3%   1   0% /usr/bin/code-manager -u GlacierRecovery
+  481     1 root     S    21424   3%   1   0% /usr/bin/code-manager -u DebugTokenInstall
+  450     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u MTD -i pciechip -m Nvidia:PCIECHIP_MTD:9a38e3da0f6a4ca99e68ea87dfd8d852
+  448     1 root     S    20648   2%   0   0% /usr/bin/code-manager -u JAMPLAYER
+  375     1 root     S    20404   2%   0   0% /usr/bin/phosphor-bmc-inventory
+  604     1 root     S    17716   2%   1   0% /usr/bin/phosphor-log-manager /etc/phosphor-logging/conf/phosphor-logging-namespace.json
+  460     1 root     S    17000   2%   3   0% /usr/bin/spdmd
+  371     1 root     S    16616   2%   2   0% /usr/bin/phosphor-network-manager
+  250     1 systemd- S    16388   2%   2   0% /usr/lib/systemd/systemd-networkd
+  429     1 root     S    16384   2%   3   0% phosphor-user-manager
+  468     1 root     S    16280   2%   0   0% /usr/bin/smbiosmdrv2app
+ 2525     1 root     S    15948   2%   2   0% /usr/bin/configurable-state-manager
+  390     1 root     S    15920   2%   2   0% /usr/bin/phosphor-chassis-state-manager --chassis 0
+  374     1 root     S    15808   2%   1   0% phosphor-settings-manager
+  607     1 root     S    15716   2%   0   0% /usr/bin/phosphor-host-state-manager --host 0
+  307     1 root     S    15688   2%   1   0% /usr/bin/nvidia-power-supply-monitor
+  305     1 root     S    15680   2%   1   0% nvidia-cpld-monitor
+  378     1 root     S    15612   2%   0   0% /usr/bin/phosphor-rsyslog-conf
+  433     1 root     S    15560   2%   2   0% /usr/bin/phosphor-bmc-state-manager
+  487     1 root     S    15400   2%   1   0% /usr/bin/phosphor-time-manager
+  376     1 root     S    15400   2%   3   0% /usr/bin/phosphor-download-manager
+  254     1 systemd- S    15092   2%   0   0% /usr/lib/systemd/systemd-resolved
+  241     1 root     S    11192   1%   0   0% /usr/lib/systemd/systemd-udevd
+  463     1 root     S    11096   1%   0   0% /usr/bin/hwmontempsensor
+  466     1 root     S    10020   1%   3   0% /usr/bin/presence-detect
+  380     1 root     S     8568   1%   2   0% /usr/bin/telemetry
+  365     1 root     S     8404   1%   1   0% /usr/bin/cper-logger
+  519     1 root     S     8284   1%   1   0% /usr/bin/erot-time-manager
+  606     1 root     S     8256   1%   0   0% /usr/bin/phosphor-systemd-target-monitor -f /etc/phosphor-systemd-target-monitor/phosphor-target-monitor-default.json -s /etc/phosphor-systemd-target-monitor/phosphor-service-monitor-default.json
+  308     1 root     S     7808   1%   0   0% phosphor-dump-monitor
+  298     1 root     S     7656   1%   1   0% /usr/bin/create-dump-dbus -s
+  294     1 messageb S     6724   1%   3   0% /usr/bin/dbus-broker-launch --scope system --audit
+  423     1 root     S     6480   1%   0   0% /bin/login --
+46132 46131 root     S     5064   1%   0   0% /usr/bin/mctp-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+  584   423 root     S     4176   0%   0   0% -sh
+  295   294 messageb S     4092   0%   1   0% dbus-broker --log 4 --controller 9 --machine-id 151fca2772b449ebb4355e2e4b0776c4 --max-bytes 536870912 --max-fds 4096 --max-matches 16384 --audit
+43605 43603 root     S     3920   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+45994     1 root     S     3920   0%   1   0% {hmc-temp-sensor} /bin/bash /usr/bin/hmc-temp-sensor.sh
+43606 43603 root     S     3896   0%   0   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+  790     1 root     S     3788   0%   0   0% bash /usr/bin/monitor-eventing-memory-watcher
+46131     1 root     S     3788   0%   1   0% {mctp-usb-ctrl} /bin/sh /usr/bin/mctp-usb-ctrl -m 1 -t 3 -d 1 -v 1 -f /usr/share/mctp/mctp_cfg_usb.json -w 1-1
+46212     1 root     R     3788   0%   3   0% {obmc-flash-bmc} /bin/bash /usr/bin/obmc-flash-bmc rebootguarddisable
+43603   584 root     S     3788   0%   1   0% {fw-update-perf.} /bin/sh ./fw-update-perf.sh /tmp/log SMCNPCM_nv.update 100
+46143     1 root     S     3372   0%   2   0% /usr/bin/sleep 20
+46002   790 root     S     3372   0%   2   0% sleep 60
+46144 45994 root     S     3372   0%   3   0% sleep 10
+  410     1 root     S     2264   0%   3   0% /sbin/agetty -o -p -- \u --noclear - linux
+  173     2 root     SWN      0   0%   1   0% [jffs2_gcd_mtd6]
+   13     2 root     IW       0   0%   1   0% [rcu_sched]
+  496     2 root     SW       0   0%   2   0% [jbd2/mmcblk0p3-]
+   50     2 root     SW       0   0%   2   0% [hwrng]
+21680     2 root     IW       0   0%   2   0% [kworker/u10:0-f]
+43537     2 root     IW       0   0%   0   0% [kworker/0:0-eve]
+29328     2 root     IW       0   0%   2   0% [kworker/u11:3-w]
+   12     2 root     SW       0   0%   0   0% [ksoftirqd/0]
+   40     2 root     SW       0   0%   3   0% [kcompactd0]
+40755     2 root     IW       0   0%   0   0% [kworker/0:2-mm_]
+   28     2 root     SW       0   0%   3   0% [ksoftirqd/3]
+   18     2 root     SW       0   0%   1   0% [ksoftirqd/1]
+   23     2 root     SW       0   0%   2   0% [ksoftirqd/2]
+41289     2 root     IW       0   0%   2   0% [kworker/2:1-mm_]
+  136     2 root     IW<      0   0%   2   0% [kworker/2:1H-kb]
+38881     2 root     IW       0   0%   1   0% [kworker/1:2-eve]
+ 4880     2 root     IW<      0   0%   1   0% [kworker/1:0H-kb]
+37892     2 root     IW       0   0%   0   0% [kworker/u9:3-fl]
+27865     2 root     IW<      0   0%   3   0% [kworker/3:0H-kb]
+    2     0 root     SW       0   0%   1   0% [kthreadd]
+40523     2 root     IW       0   0%   0   0% [kworker/u12:0-e]
+   35     2 root     SW       0   0%   0   0% [kdevtmpfs]
+42833     2 root     IW       0   0%   2   0% [kworker/u11:1-e]
+43403     2 root     IW       0   0%   1   0% [kworker/u10:1-e]
+42163     2 root     IW       0   0%   0   0% [kworker/u9:0-fl]
+43479     2 root     IW       0   0%   0   0% [kworker/u9:1-fl]
+   14     2 root     SW       0   0%   0   0% [migration/0]
+   17     2 root     SW       0   0%   1   0% [migration/1]
+42968     2 root     IW       0   0%   1   0% [kworker/u12:2-f]
+43585     2 root     IW<      0   0%   0   0% [kworker/0:2H-kb]
+44791     2 root     IW       0   0%   2   0% [kworker/2:0-eve]
+   22     2 root     SW       0   0%   2   0% [migration/2]
+   27     2 root     SW       0   0%   3   0% [migration/3]
+    3     2 root     SW       0   0%   1   0% [pool_workqueue_]
+    4     2 root     IW<      0   0%   0   0% [kworker/R-rcu_g]
+    5     2 root     IW<      0   0%   0   0% [kworker/R-rcu_p]
+    6     2 root     IW<      0   0%   0   0% [kworker/R-slub_]
+   10     2 root     IW       0   0%   0   0% [kworker/u8:0]
+   11     2 root     IW<      0   0%   0   0% [kworker/R-mm_pe]
+   15     2 root     SW       0   0%   0   0% [cpuhp/0]
+   16     2 root     SW       0   0%   1   0% [cpuhp/1]
+   21     2 root     SW       0   0%   2   0% [cpuhp/2]
+   26     2 root     SW       0   0%   3   0% [cpuhp/3]
+   36     2 root     IW<      0   0%   3   0% [kworker/R-inet_]
+   38     2 root     SW       0   0%   2   0% [oom_reaper]
+   39     2 root     IW<      0   0%   1   0% [kworker/R-write]
+   41     2 root     IW<      0   0%   1   0% [kworker/R-kbloc]
+   42     2 root     IW<      0   0%   2   0% [kworker/R-edac-]
+   43     2 root     SW       0   0%   1   0% [watchdogd]
+   46     2 root     SW       0   0%   2   0% [kswapd0]
+   51     2 root     IW<      0   0%   0   0% [kworker/u13:0]
+   52     2 root     IW<      0   0%   0   0% [kworker/u14:0]
+   53     2 root     IW<      0   0%   0   0% [kworker/u15:0]
+   54     2 root     IW<      0   0%   0   0% [kworker/u16:0]
+   55     2 root     IW<      0   0%   0   0% [kworker/u17:0]
+   56     2 root     IW<      0   0%   0   0% [kworker/R-nbd0-]
+   57     2 root     IW<      0   0%   0   0% [kworker/R-nbd1-]
+   58     2 root     IW<      0   0%   0   0% [kworker/R-nbd2-]
+   59     2 root     IW<      0   0%   0   0% [kworker/R-nbd3-]
+   60     2 root     IW<      0   0%   0   0% [kworker/R-nbd4-]
+   61     2 root     IW<      0   0%   0   0% [kworker/R-nbd5-]
+   62     2 root     IW<      0   0%   0   0% [kworker/R-nbd6-]
+   63     2 root     IW<      0   0%   0   0% [kworker/R-nbd7-]
+   64     2 root     IW<      0   0%   0   0% [kworker/R-nbd8-]
+   65     2 root     IW<      0   0%   0   0% [kworker/R-nbd9-]
+   66     2 root     IW<      0   0%   0   0% [kworker/R-nbd10]
+   67     2 root     IW<      0   0%   0   0% [kworker/R-nbd11]
+   68     2 root     IW<      0   0%   0   0% [kworker/R-nbd12]
+   69     2 root     IW<      0   0%   0   0% [kworker/R-nbd13]
+   70     2 root     IW<      0   0%   0   0% [kworker/R-nbd14]
+   71     2 root     IW<      0   0%   0   0% [kworker/R-nbd15]
+   74     2 root     SW       0   0%   0   0% [spi1]
+   75     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+   77     2 root     IW<      0   0%   0   0% [kworker/R-stmma]
+   79     2 root     IW<      0   0%   1   0% [kworker/R-stmma]
+  112     2 root     IW<      0   0%   1   0% [kworker/R-vfio-]
+  114     2 root     IW<      0   0%   0   0% [kworker/R-sdhci]
+  115     2 root     SW       0   0%   0   0% [irq/49-mmc0]
+  116     2 root     IW<      0   0%   2   0% [kworker/R-mld]
+  118     2 root     IW<      0   0%   0   0% [kworker/R-ipv6_]
+  141     2 root     IW<      0   0%   3   0% [kworker/R-mmc_c]
+  189     2 root     SWN      0   0%   3   0% [jffs2_gcd_mtd7]
+  309     2 root     SW       0   0%   2   0% [irq/62-I2C2_ALE]
+  310     2 root     SW       0   0%   2   0% [irq/61-I2C3_ALE]
+  311     2 root     SW       0   0%   2   0% [irq/60-PS_RUN_P]
+  312     2 root     SW       0   0%   2   0% [irq/63-THERM_OV]
+  478     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p1-]
+  479     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  488     2 root     SW       0   0%   1   0% [jbd2/mmcblk0p2-]
+  489     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  497     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+  503     2 root     SW       0   0%   3   0% [jbd2/mmcblk0p5-]
+  504     2 root     IW<      0   0%   3   0% [kworker/R-ext4-]
+  515     2 root     IW<      0   0%   1   0% [kworker/R-ext4-]
+43476     2 root     IW       0   0%   3   0% [kworker/3:2-eve]
+43731     2 root     IW       0   0%   3   0% [kworker/3:0-cgr]
+43751     2 root     IW       0   0%   1   0% [kworker/u10:2]
+43753     2 root     IW<      0   0%   1   0% [kworker/1:1H]
+43872     2 root     IW       0   0%   2   0% [kworker/u11:2]
+43994     2 root     IW<      0   0%   3   0% [kworker/3:2H-kb]
+44117     2 root     IW<      0   0%   2   0% [kworker/2:2H-kb]
+44315     2 root     IW       0   0%   1   0% [kworker/1:1-mm_]
+44703     2 root     IW<      0   0%   0   0% [kworker/0:0H-mm]
+44956     2 root     IW       0   0%   3   0% [kworker/u12:3]
+45296     2 root     IW       0   0%   3   0% [kworker/3:1-ipv]
+45510     2 root     IW       0   0%   0   0% [kworker/0:1-eve]
+45553     2 root     IW       0   0%   1   0% [kworker/u11:0]
+45645     2 root     IW       0   0%   1   0% [kworker/1:0-mm_]
+45910     2 root     IW       0   0%   0   0% [kworker/u9:2]
+45911     2 root     IW<      0   0%   0   0% [kworker/0:1H-mm]
+45912     2 root     IW<      0   0%   1   0% [kworker/1:2H]
+46020     2 root     IW       0   0%   2   0% [kworker/2:2-mm_]
+46155     2 root     IW       0   0%   1   0% [kworker/u10:3]
+
